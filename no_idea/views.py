@@ -41,7 +41,7 @@ def home(request):
     return render(request, 'home.html',  {"page_obj":page_obj, "data_1":data_1})
 
 
-def enter(request):
+"""def enter(request):
 	form = my_login()
 	if request.method=="POST":
 		form    = my_login(request.POST)
@@ -49,7 +49,7 @@ def enter(request):
 			login.objects.create(**form.cleaned_data)
 		form = my_login()
 	context ={"form": form}
-	return render(request, 'register.html', context)
+	return render(request, 'register.html', context)"""
 
 def engine(request, user_id):
     if (request.user.is_staff or request.user.is_superuser):
