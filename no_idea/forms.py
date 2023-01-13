@@ -1,7 +1,7 @@
 from django import forms
 from .models import art_gallery
 from .models import *
-from django.contrib import messages
+
 from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
 
 

@@ -4,7 +4,6 @@ from . import views
 
 urlpatterns = [
 	path('', views.home, name='home'),
-	path('enter/', views.enter, name='enter'),
 	path('engine/<int:user_id>/', views.engine, name='engine'),
 	path('eachpost/<slug:slug>-<int:category_id>/', views.eachpost, name='eachpost'),
 	path('postlist/', views.postlist, name='postlist'),
